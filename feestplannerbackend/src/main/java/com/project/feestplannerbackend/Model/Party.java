@@ -8,7 +8,6 @@ import java.util.Date;
 
 
 @Entity
-@Table(name = "Party")
 public class Party {
 
     @Id
@@ -17,8 +16,8 @@ public class Party {
     private String Partyname;
     private String Description;
     private LocalDate Date;
-    private LocalTime StartTime;
-    private LocalTime EndTime;
+    private LocalTime Starttime;
+    private LocalTime Endtime;
 
     public Party(){
     }
@@ -56,18 +55,18 @@ public class Party {
     }
 
     public LocalTime getStartTime() {
-        return StartTime;
+        return Starttime;
     }
 
     public void setStartTime(LocalTime startTime) {
-        StartTime = startTime;
+        Starttime = startTime;
     }
 
     public LocalTime getEndTime() {
-        return EndTime;
+        return Endtime;
     }
 
-    public void setEndTime(LocalTime endTime) {
-        EndTime = endTime;
+    public void setEndTime(LocalTime endtime) {
+        Endtime = endtime;
     }
 }
