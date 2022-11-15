@@ -2,7 +2,6 @@ package com.project.feestplannerbackend.Controller;
 
 import com.project.feestplannerbackend.Model.User;
 import com.project.feestplannerbackend.Repository.UserRepository;
-import com.project.feestplannerbackend.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +23,4 @@ public class UserController {
     List<User> getallUsers(){
         return userRepository.findAll();
     }
-
-
 }
