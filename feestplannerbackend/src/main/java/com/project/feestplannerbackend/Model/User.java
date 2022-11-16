@@ -3,6 +3,7 @@ package com.project.feestplannerbackend.Model;
 import javax.persistence.*;
 
 @Entity
+@Table (name = "Member")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
