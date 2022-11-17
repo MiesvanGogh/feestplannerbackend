@@ -1,10 +1,14 @@
 package com.project.feestplannerbackend.Model;
 
+
+import org.springframework.ui.Model;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity
@@ -18,6 +22,10 @@ public class Party {
     private LocalDate Date;
     private LocalTime Starttime;
     private LocalTime Endtime;
+
+    @OneToMany(targetEntity = User.class,cascade = CascadeType.ALL)
+    @JoinColumn(name = "User_fk", referencedColumnName = "ID")
+    private List<User> members;
 
     public Party(){
     }
