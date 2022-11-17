@@ -17,6 +17,7 @@ public class PartyController {
 
     @PostMapping("/add")
     Party newParty(@RequestBody Party newParty){
+
         return partyRepository.save(newParty);
     }
 
