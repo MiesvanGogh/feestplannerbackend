@@ -22,6 +22,7 @@ public class PartyController {
 
     @GetMapping("/getAll")
     List<Party> getallPartys(){
+
         return partyRepository.findAll();
     }
 }
