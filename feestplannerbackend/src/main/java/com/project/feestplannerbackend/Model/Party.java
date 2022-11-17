@@ -13,7 +13,6 @@ import java.util.List;
 
 @Entity
 public class Party {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
