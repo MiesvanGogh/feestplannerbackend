@@ -15,8 +15,9 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-]=[-098765r4ewqertyui
-	';lkj</properties>
+		<sonar.organization>miesvangogh</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
